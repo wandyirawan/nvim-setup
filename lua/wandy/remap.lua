@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv")
 
-vim.keymap.set("n", "N", "mzJ`z")
+vim.keymap.set("n", "Z", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "f", "nzzzv")
@@ -57,6 +57,7 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Vim for Colemak
+map('', 'm', 'h', {})
 map('', 'n', 'j', {})
 map('', 'e', 'k', {})
 map('', 'i', 'l', {})
